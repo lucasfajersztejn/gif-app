@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test on <GifItem /> title and url are needed 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="title is needed"
+      src="https://api.giphy.com/v1/gifs/search?api_key=xM25jB2FxNgSRzRmX4IM5cuc69lUFBIT&q=DragonBall&limit=10"
+    />
+    <p>
+      title is needed
+    </p>
+  </div>
+</div>
+`;
