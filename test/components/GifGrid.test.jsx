@@ -19,15 +19,35 @@ describe('pruebas en <GifGrid />', () => {
     render( <GifGrid category={ category } /> );
     expect( screen.getByText( 'Cargando...' ) );
     expect( screen.getByText( category ) );
-    screen.debug();
+    // screen.debug();
 
   });
 
   test('Debe de mostrar items cuando se cargan las imágenes useFetchGifs', () => {
+    
+    const gifs = [
+      {
+        id: 'ABC',
+        title: 'Saitama',
+        url: 'https://localhost/saitama.jpg'
+      },
+      {
+        id: '123',
+        title: 'Goku',
+        url: 'https://localhost/goku.jpg'
+      },
+    ]
+
     useFetchGifs.mockReturnValue({
-      images: [],
-      isLoading: true 
+      images: gifs,
+      isLoading: false
     });
+
+    render( <GifGrid category={ category } /> );
+    expect( screen.getAllByRole('img').length ).toBe(2);
+
+    // screen.debug();
+
   });
 
 });
