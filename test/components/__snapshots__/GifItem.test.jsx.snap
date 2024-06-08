@@ -6,11 +6,11 @@ exports[`test on <GifItem /> title and url are needed 1`] = `
     class="card"
   >
     <img
-      alt="title is needed"
+      alt="Saitama"
       src="https://api.giphy.com/v1/gifs/search?api_key=xM25jB2FxNgSRzRmX4IM5cuc69lUFBIT&q=DragonBall&limit=10"
     />
     <p>
-      title is needed
+      Saitama
     </p>
   </div>
 </div>
